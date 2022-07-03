@@ -1,8 +1,7 @@
-export default function Nav(){
-    return(
-        <>
-        <h1>i am nav</h1>
-        <h2>hello world</h2>
-        </>
-    )
+import React from "react";
+import "./nav.css";
+function Nav() {
+  return <div>Nav</div>;
 }
+
+export default Nav;
