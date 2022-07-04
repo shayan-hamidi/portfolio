@@ -1,5 +1,5 @@
 {
-  "homepage":"https://shayan-hamidi.github.io/portfolio",
+  "homepage": "https://shayan-hamidi.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.2.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
