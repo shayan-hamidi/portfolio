@@ -48,7 +48,7 @@ function Testimonials() {
       >
         {data.map(({ avatar, name, review }, index) => {
           return (
-            <SwiperSlide className="testimonial">
+            <SwiperSlide key={index} className="testimonial">
               <div className="client__avatar">
                 <img src={avatar} alt={name} />
               </div>

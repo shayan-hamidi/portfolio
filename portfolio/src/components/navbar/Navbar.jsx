@@ -6,7 +6,7 @@ import { BsBook } from "react-icons/bs";
 import { RiServiceLine } from "react-icons/ri";
 import { RiContactsBook2Line } from "react-icons/ri";
 import { useState } from "react";
-function Nav() {
+function Navbar() {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
@@ -49,4 +49,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navbar;

@@ -1,6 +1,6 @@
 import "./index.css";
 import Header from "./components/header/Header";
-import Nav from "./components/Nav/Nav";
+import Nav from "./components/navbar/Navbar";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Services from "./components/services/Services";
