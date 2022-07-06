@@ -1,16 +1,22 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { AiFillFacebook } from "react-icons/ai";
+
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" target={"_blank"} rel="noreferrer">
+      <a
+        href="https://www.linkedin.com/in/shayan-hamidi-b2812a202/"
+        target={"_blank"}
+        rel="noreferrer"
+      >
         <BsLinkedin />
       </a>
-      <a href="https://github.com" target={"_blank"} rel="noreferrer">
+      <a href="https://github.com/shayan-hamidi" target={"_blank"} rel="noreferrer">
         <BsGithub />
       </a>
-      <a href="https://dribble.com" target={"_blank"} rel="noreferrer">
-        <BsDribbble />
+      <a href="https://www.facebook.com/profile.php?id=100072877444506" target={"_blank"} rel="noreferrer">
+        <AiFillFacebook />
       </a>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/about-me.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { GoProject } from "react-icons/go";
@@ -32,10 +32,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-            delectus est, eos sed nobis atque eveniet optio corporis a harum
-            numquam accusamus aspernatur officiis natus provident quidem
-            veritatis odit nisi?
+            Currently, my focus is on SPA topics (react js). My goal is to
+            increase my personal skills and knowledge in my work field. By
+            succeeding in the challenges, my motivation multiplies. One of my
+            challenges is cooperation with foreign companies.❗
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
