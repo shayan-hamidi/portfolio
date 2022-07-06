@@ -45,6 +45,7 @@ footer a {
   margin-bottom: 4rem;
 }
 /*==================== MEDIA QUERIES (SMALL DEVICES) ====================*/
+
 @media screen and (max-width: 600px) {
   .permalinks {
     flex-direction: column;
