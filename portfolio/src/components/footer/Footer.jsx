@@ -4,7 +4,10 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
-      <a href="https://instagram.com" className="footer__logo">
+      <a
+        href="https://www.instagram.com/_about_shine_/"
+        className="footer__logo"
+      >
         SHINE
       </a>
       <ul className="permalinks">
@@ -31,10 +34,10 @@ function Footer() {
         </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://facebook.com">
+        <a href="https://www.facebook.com/profile.php?id=100072877444506">
           <FaFacebookF />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://www.instagram.com/_about_shine_/">
           <FaInstagram />
         </a>
       </div>

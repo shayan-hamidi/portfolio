@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { AiFillFacebook } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import { AiFillFacebook } from "react-icons/ai";
 
 function Contact() {
   const form = useRef();
@@ -40,7 +40,7 @@ function Contact() {
           </article>
           <article className="contact__option">
             <AiFillFacebook className="contact__option-icon" />
-            <h4>Messenger</h4>
+            <h4>Facebook</h4>
             <h5>Shayan Hamidi</h5>
             <a href="https://www.facebook.com/profile.php?id=100072877444506">
               Send a message
