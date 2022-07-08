@@ -7,7 +7,7 @@ import { RiServiceLine } from "react-icons/ri";
 import { RiContactsBook2Line } from "react-icons/ri";
 import { useState } from "react";
 function Navbar() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("");
   return (
     <nav>
       <a

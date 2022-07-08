@@ -9,7 +9,14 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Particle from "./components/particle/Particle";
+import Dialog from "./components/dialog/Dialog";
+import { useEffect, useState } from "react";
 function App() {
+  const [open, setOpen] = useState(true);
+  useEffect(() => {
+    if(open) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [open])
   return (
     <>
       <Particle />
@@ -22,6 +29,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      {open && <Dialog setOpen={setOpen} />}
     </>
   );
 }
