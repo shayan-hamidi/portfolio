@@ -1,9 +1,9 @@
 import React from "react";
 import "./testimonials.css";
 import AVTR1 from "../../assets/Golshenas.jpeg";
-import AVTR2 from "../../assets/avatar2.jpg";
-import AVTR3 from "../../assets/avatar3.jpg";
-import AVTR4 from "../../assets/avatar4.jpg";
+import AVTR2 from "../../assets/Khani.jpeg";
+// import AVTR3 from "../../assets/avatar3.jpg";
+// import AVTR4 from "../../assets/avatar4.jpg";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,22 +19,23 @@ function Testimonials() {
     },
     {
       avatar: AVTR2,
-      name: "Tina Snow",
+      name: "Mohammad Khani",
+      position: "Front-end Team Lead at Nodin Soft",
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi obcaecati facere ut rerum, deleniti in enim nobis? Sequi hic quasi magnam inventore quos dicta corrupti nulla eveniet rem autem.",
+        "Shayan showed a high level of web development technical skills and was a valuable contributor to our projects.He denotes a lot of analytical capability and willingness for both his personal & professional development. He learns quickly and I would have no hesitation in working with Shayan once again in the future.",
     },
-    {
-      avatar: AVTR3,
-      name: "Tina Snow",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi obcaecati facere ut rerum, deleniti in enim nobis? Sequi hic quasi magnam inventore quos dicta corrupti nulla eveniet rem autem.",
-    },
-    {
-      avatar: AVTR4,
-      name: "Tina Snow",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi obcaecati facere ut rerum, deleniti in enim nobis? Sequi hic quasi magnam inventore quos dicta corrupti nulla eveniet rem autem.",
-    },
+    // {
+    //   avatar: AVTR3,
+    //   name: "Tina Snow",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi obcaecati facere ut rerum, deleniti in enim nobis? Sequi hic quasi magnam inventore quos dicta corrupti nulla eveniet rem autem.",
+    // },
+    // {
+    //   avatar: AVTR4,
+    //   name: "Tina Snow",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi obcaecati facere ut rerum, deleniti in enim nobis? Sequi hic quasi magnam inventore quos dicta corrupti nulla eveniet rem autem.",
+    // },
   ];
   return (
     <section id="testimonials">
