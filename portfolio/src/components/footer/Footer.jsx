@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Trans } from "react-i18next";
 function Footer() {
   return (
     <footer>
@@ -12,25 +13,39 @@ function Footer() {
       </a>
       <ul className="permalinks">
         <li>
-          <a href="#header">Home</a>
+          <a href="#header">
+            <Trans i18nKey={"home"} />
+          </a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">
+            <Trans i18nKey={"about"} />
+          </a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience">
+            <Trans i18nKey={"experience"} />
+          </a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#services">
+            <Trans i18nKey={"services"} />
+          </a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">
+            <Trans i18nKey={"portfolio"} />
+          </a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonials">
+            <Trans i18nKey={"testimonials"} />
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">
+            <Trans i18nKey={"contact"} />
+          </a>
         </li>
       </ul>
       <div className="footer__socials">

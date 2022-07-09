@@ -8,21 +8,21 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Trans, useTranslation } from "react-i18next";
 function Testimonials() {
+  const { t } = useTranslation();
   const data = [
     {
       avatar: AVTR1,
-      name: "Hamed Golshenas",
-      position: "HR at Nodin Soft",
-      review:
-        "Shayan is one of the best among all people I have ever worked with. He is always punctual, his knowledge is vast and extensive. Excellent and result driven. Works towards maximal customer satisfaction. Give him the really challenging tasks, the ones that everyone else is struggling with, and he will get them done. He is a trustworthy person and I will always hold him in the highest esteem.",
+      name: t("HamedGolshenas"),
+      position: t("HamedGolshenasP"),
+      review: t("HamedGolshenasC"),
     },
     {
       avatar: AVTR2,
-      name: "Mohammad Khani",
-      position: "Front-end Team Lead at Nodin Soft",
-      review:
-        "Shayan showed a high level of web development technical skills and was a valuable contributor to our projects.He denotes a lot of analytical capability and willingness for both his personal & professional development. He learns quickly and I would have no hesitation in working with Shayan once again in the future.",
+      name: t("MohammadKhani"),
+      position: t("MohammadKhaniP"),
+      review: t("MohammadKhaniC"),
     },
     // {
     //   avatar: AVTR3,
@@ -39,8 +39,12 @@ function Testimonials() {
   ];
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <h5>
+        <Trans i18nKey={"colleaguesReview"} />
+      </h5>
+      <h2>
+        <Trans i18nKey={"testimonials"} />
+      </h2>
       <Swiper
         className="container testimonials__container"
         modules={[Pagination]}

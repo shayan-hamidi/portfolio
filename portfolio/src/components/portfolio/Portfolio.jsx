@@ -6,55 +6,61 @@ import IMG3 from "../../assets/project3.png";
 import IMG4 from "../../assets/project4.png";
 import IMG5 from "../../assets/project5.png";
 import IMG6 from "../../assets/project6.png";
+import { Trans, useTranslation } from "react-i18next";
 function Portfolio() {
+  const { t } = useTranslation();
   const data = [
     {
       id: 1,
       image: IMG6,
-      title: "Snapp Simulator",
+      title: t("portfolio1title"),
       github: "https://github.com/alireza-phy/snapp-market-react",
       // demo: "https://github.com",
     },
     {
       id: 2,
       image: IMG2,
-      title: "Online Shop",
+      title: t("portfolio2title"),
       github: "https://github.com/shayan-hamidi/onlineShopReact",
       demo: "https://shayan-hamidi.github.io/onlineShopReact/",
     },
     {
       id: 3,
       image: IMG3,
-      title: "Weather App",
+      title: t("portfolio3title"),
       github: "https://github.com/shayan-hamidi/dashboard-nodin-soft",
       // demo: "https://github.com",
     },
     {
       id: 4,
       image: IMG4,
-      title: "Videos Api",
+      title: t("portfolio4title"),
       github: "https://github.com/shayan-hamidi/tamrin-UI-films",
       demo: "https://shayan-hamidi.github.io/tamrin-UI-films/",
     },
     {
       id: 5,
       image: IMG1,
-      title: "Charts templates & infographics in Figma",
+      title: t("portfolio5title"),
       // github: "https://github.com",
       demo: "http://panayadak.ir/",
     },
     {
       id: 6,
       image: IMG5,
-      title: "Charts templates & infographics in Figma",
+      title: t("portfolio6title"),
       github: "https://github.com/shayan-hamidi/todo-list-responsive",
       demo: "https://shayan-hamidi.github.io/todo-list-responsive/",
     },
   ];
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>
+        <Trans i18nKey={"recentWork"} />
+      </h5>
+      <h2>
+        <Trans i18nKey={"portfolio"} />
+      </h2>
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
@@ -71,7 +77,7 @@ function Portfolio() {
                     target={"_blank"}
                     rel="noreferrer"
                   >
-                    Github
+                    <Trans i18nKey={"github"} />
                   </a>
                 ) : null}
                 {demo ? (
@@ -81,7 +87,7 @@ function Portfolio() {
                     target={"_blank"}
                     rel="noreferrer"
                   >
-                    Live Demo
+                    <Trans i18nKey={"liveDemo"} />
                   </a>
                 ) : null}
               </div>
