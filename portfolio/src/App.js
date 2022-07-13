@@ -14,9 +14,12 @@ import { useEffect, useState } from "react";
 function App() {
   const [open, setOpen] = useState(true);
   useEffect(() => {
-    if(open) document.body.style.overflow = "hidden";
+    if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
-  }, [open])
+  }, [open]);
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
   return (
     <>
       <Particle />
