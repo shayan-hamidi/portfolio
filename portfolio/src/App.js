@@ -20,13 +20,6 @@ function App() {
     i18n.language === "fa" ? "rtl" : "ltr"
   );
   useEffect(() => {
-    if (open) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "auto";
-  }, [open]);
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-  }, []);
-  useEffect(() => {
     i18n.changeLanguage(lang);
     if (lang === "fa") {
       document.body.style.direction = direction;
@@ -34,6 +27,13 @@ function App() {
       document.body.style.direction = direction;
     }
   }, [lang, i18n, direction]);
+  useEffect(() => {
+    if (open) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [open]);
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
   return (
     <>
       <Particle />
