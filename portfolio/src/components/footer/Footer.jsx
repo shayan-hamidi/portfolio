@@ -2,7 +2,9 @@ import React from "react";
 import "./footer.css";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Trans } from "react-i18next";
-function Footer() {
+import IRflag from "../../assets/IRflag.png";
+import USflag from "../../assets/USflag.png";
+function Footer({ setLang, setDirection }) {
   return (
     <footer>
       <a
@@ -55,6 +57,24 @@ function Footer() {
         <a href="https://www.instagram.com/_about_shine_/">
           <FaInstagram />
         </a>
+      </div>
+      <div className="footer__langOptions">
+        <button
+          onClick={() => {
+            setLang("fa");
+            setDirection("rtl");
+          }}
+        >
+          <img src={IRflag} alt="iran language" />
+        </button>
+        <button
+          onClick={() => {
+            setLang("en");
+            setDirection("ltr");
+          }}
+        >
+          <img src={USflag} alt="usa language" />
+        </button>
       </div>
       <div className="footer__copyright">
         <small>&copy; Shine. All right reserved.</small>

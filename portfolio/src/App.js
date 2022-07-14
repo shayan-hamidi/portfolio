@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Nav from "./components/navbar/Navbar";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
-// import Services from "./components/services/Services";
+import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
@@ -11,8 +11,14 @@ import Footer from "./components/footer/Footer";
 import Particle from "./components/particle/Particle";
 import Dialog from "./components/dialog/Dialog";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 function App() {
   const [open, setOpen] = useState(true);
+  const { i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language);
+  const [direction, setDirection] = useState(
+    i18n.language === "fa" ? "rtl" : "ltr"
+  );
   useEffect(() => {
     if (open) document.body.style.overflow = "hidden";
     else document.body.style.overflow = "auto";
@@ -20,6 +26,14 @@ function App() {
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   }, []);
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+    if (lang === "fa") {
+      document.body.style.direction = direction;
+    }else{
+      document.body.style.direction = direction;
+    }
+  }, [lang, i18n, direction]);
   return (
     <>
       <Particle />
@@ -27,12 +41,18 @@ function App() {
       <Nav />
       <About />
       <Experience />
-      {/* <Services /> */}
+      <Services />
       <Portfolio />
       <Testimonials />
       <Contact />
-      <Footer />
-      {open && <Dialog setOpen={setOpen} />}
+      <Footer setLang={setLang} setDirection={setDirection} />
+      {open && (
+        <Dialog
+          setOpen={setOpen}
+          setLang={setLang}
+          setDirection={setDirection}
+        />
+      )}
     </>
   );
 }

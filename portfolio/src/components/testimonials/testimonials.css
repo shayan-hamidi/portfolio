@@ -1,6 +1,7 @@
 .container.testimonials__container {
   width: 40%;
   padding-bottom: 4rem;
+  direction: ltr !important;
 }
 .client__avatar {
   width: 4rem;
@@ -26,7 +27,11 @@
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background: var(--color-primary);
+  direction: ltr !important;
 }
+/* .swiper-slide,.swiper-slide-active,.testimonial{
+  margin-right: 0px !important;
+} */
 /*==================== MEDIA QUERIES (MEDIUM DEVICES) ====================*/
 @media screen and (max-width: 1024px) {
   .container.testimonials__container {

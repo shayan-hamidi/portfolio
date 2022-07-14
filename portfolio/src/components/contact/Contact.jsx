@@ -63,7 +63,7 @@ function Contact() {
             <h4>
               <Trans i18nKey={"whatsApp"} />
             </h4>
-            <h5>+989301023512</h5>
+            <h5>989301023512</h5>
             <a href="https://api.whatsapp.com/send?phone=+989301023512">
               <Trans i18nKey={"sendAmessage"} />
             </a>

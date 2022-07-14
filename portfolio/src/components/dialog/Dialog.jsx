@@ -1,37 +1,42 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import "./dialog.css";
-function Dialog({ setOpen }) {
-  const { i18n } = useTranslation();
+import IRflag from "../../assets/IRflag.png";
+import USflag from "../../assets/USflag.png";
+
+function Dialog({ setOpen, setLang, setDirection }) {
   return (
     <div className="dialog-outer">
       <div className="dialog-container">
         <div className="dialog-header">
-          <h2>Select Language</h2>
-          <h2>انتخاب زبان</h2>
+          <h3>Select Language</h3>
+          <h3>انتخاب زبان</h3>
         </div>
         <div className="dialog-body">
-          <h5>choose your language</h5>
-          <h5>زبان خود را انتخاب کنید</h5>
+          <h6>choose your language</h6>
+          <h6>زبان خود را انتخاب کنید</h6>
         </div>
         <div className="dialog-footer">
           <button
-            className="btn btn-primary"
+            className="btn btn-primary lang-btn"
             onClick={() => {
-              i18n.changeLanguage("en");
+              setLang("en");
+              setDirection("ltr");
               setOpen(false);
             }}
           >
             English
+            <img src={USflag} alt="english language" />
           </button>
           <button
-            className="btn btn-primary"
+            className="btn btn-primary lang-btn"
             onClick={() => {
-              i18n.changeLanguage("fa");
+              setLang("fa");
+              setDirection("rtl");
               setOpen(false);
             }}
           >
             فارسی
+            <img src={IRflag} alt="persian language" />
           </button>
         </div>
       </div>
