@@ -30,11 +30,6 @@ function Footer({ setLang, setDirection }) {
           </a>
         </li>
         <li>
-          <a href="#services">
-            <Trans i18nKey={"services"} />
-          </a>
-        </li>
-        <li>
           <a href="#portfolio">
             <Trans i18nKey={"portfolio"} />
           </a>

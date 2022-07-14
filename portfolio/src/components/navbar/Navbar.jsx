@@ -3,8 +3,8 @@ import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsBook } from "react-icons/bs";
-import { RiServiceLine } from "react-icons/ri";
 import { RiContactsBook2Line } from "react-icons/ri";
+import {VscProject} from "react-icons/vsc";
 import { useState } from "react";
 function Navbar() {
   const [activeNav, setActiveNav] = useState("#");
@@ -32,11 +32,11 @@ function Navbar() {
         <BsBook />
       </a>
       <a
-        href="#services"
+        href="#portfolio"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
-        <RiServiceLine />
+        <VscProject />
       </a>
       <a
         href="#contact"
