@@ -4,12 +4,11 @@ import { loadFull } from "tsparticles";
 import option1 from "./option1";
 function Particle() {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    // console.log(container);
   };
   return (
     <Particles

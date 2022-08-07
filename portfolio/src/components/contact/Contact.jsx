@@ -20,10 +20,10 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result);
+          // console.log(result);
         },
         (error) => {
-          console.log(error);
+          // console.log(error);
         }
       );
     e.target.reset();
