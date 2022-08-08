@@ -6,14 +6,14 @@ export default function option1() {
     },
     particles: {
       number: {
-        value: 90,
+        value: 38,
         density: {
           enable: false,
           value_area: 1800,
         },
       },
       color: {
-        value: "#ffffff",
+        value: "#ffdfff",
       },
       shape: {
         type: "circle",
@@ -47,7 +47,7 @@ export default function option1() {
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 1,
         direction: "none",
         random: false,
         straight: false,
@@ -73,7 +73,7 @@ export default function option1() {
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 10,
           line_linked: {
             opacity: 1,
           },
