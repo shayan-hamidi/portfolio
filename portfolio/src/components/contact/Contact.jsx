@@ -45,7 +45,7 @@ function Contact() {
             </h4>
             <h5>sha.hamidi10@gmail.com</h5>
             <a href="mailto:sha.hamidi10@gmail.com">
-              <Trans i18nKey={"SendAmessage"} />
+              <Trans i18nKey={"sendAmessage"} />
             </a>
           </article>
           <article className="contact__option">

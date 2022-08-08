@@ -22,7 +22,8 @@ function App() {
     i18n.changeLanguage(lang);
     if (lang === "fa") {
       document.body.style.direction = direction;
-    }else{
+      document.body.style.fontFamily = "IRANSans";
+    } else {
       document.body.style.direction = direction;
     }
   }, [lang, i18n, direction]);
